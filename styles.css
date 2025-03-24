@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    margin-bottom: 0;
+    transition: background-color 0.5s ease;
+}
+
+.navbar.scrolled {
+    background-color: #343a40 !important;
+}
+
+.landing-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('s1.jfif') no-repeat center center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.landing-section h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+.landing-section p {
+    font-size: 1.5rem;
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+.landing-section .btn {
+    animation: fadeInUp 2s ease-in-out;
+}
+
+.friends-section {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+}
+
+.friend-profile-section {
+    padding: 4rem 0;
+}
+
+.friend-gallery-section {
+    padding: 4rem 0;
+}
+
+.friend-gallery-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.friend-gallery-section .col-md-4 {
+    margin-bottom: 1rem;
+}
+
+.friend-gallery-section img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.friend-gallery-section img:hover {
+    transform: scale(1.05);
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+.footer {
+    padding: 1rem 0;
+}
+
+.footer .social-icons a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.footer .social-icons a:hover {
+    color: #007bff;
+}
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
